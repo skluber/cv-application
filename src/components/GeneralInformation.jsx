@@ -1,15 +1,14 @@
 import { useState } from "react";
-import '../styles/GeneralInformation.css'
+import "../styles/CVSection.css";
 
 export function GeneralInformation() {
-    const [ isEditing, setIsEditing ] = useState(true);
+    const [isEditing, setIsEditing] = useState(true);
 
-    const [ generalInfo, setGeneralInfo ] = useState({
-        name: "Antonio", 
-        email: "antonio@gmail.com", 
+    const [generalInfo, setGeneralInfo] = useState({
+        name: "Antonio",
+        email: "antonio@gmail.com",
         phone: "655147917"
-    })
-
+    });
 
     const handleChange = (event) => {
         setGeneralInfo((previousInfo) => ({
@@ -21,38 +20,58 @@ export function GeneralInformation() {
     const handleSubmit = (event) => {
         event.preventDefault();
         setIsEditing(false);
-    }
+    };
 
     const handleEdit = () => {
         setIsEditing(true);
-    }
+    };
 
     if (isEditing) {
         return (
-            <form className="general-information" onSubmit={handleSubmit}>
+            <form className="cv-section" onSubmit={handleSubmit}>
 
                 <h1 className="section-title">General Information</h1>
 
                 <div className="section-inputs">
 
                     <label htmlFor="name">Name</label>
-                    <input id="name" name="name" type="text" value={ generalInfo.name } onChange={handleChange} />
+                    <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        value={generalInfo.name}
+                        onChange={handleChange}
+                    />
 
                     <label htmlFor="email">Email</label>
-                    <input id="email" name="email" type="email" value={ generalInfo.email } onChange={handleChange} />
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        value={generalInfo.email}
+                        onChange={handleChange}
+                    />
 
                     <label htmlFor="phone">Phone number</label>
-                    <input id="phone" name="phone" type="tel" value={ generalInfo.phone } onChange={handleChange} />
+                    <input
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        value={generalInfo.phone}
+                        onChange={handleChange}
+                    />
 
-                </div>  
+                </div>
 
-                <button type="submit">Submit</button>
+                <button className="section-button" type="submit">
+                    Submit
+                </button>
 
             </form>
-        )   
+        );
     } else {
         return (
-            <div className="general-information">
+            <div className="cv-section">
 
                 <h1 className="section-title">General Information</h1>
 
@@ -75,9 +94,11 @@ export function GeneralInformation() {
 
                 </div>
 
-                <button onClick={handleEdit}>Edit</button>
+                <button className="section-button" onClick={handleEdit}>
+                    Edit
+                </button>
 
             </div>
-        )
+        );
     }
 }

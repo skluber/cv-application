@@ -1,4 +1,4 @@
-.general-information {
+.cv-section {
     width: min(100% - 2rem, 600px);
     margin: 2rem auto;
     padding: 2rem;
@@ -56,7 +56,7 @@
     font-size: 1.1rem;
 }
 
-.general-information button {
+.section-button {
     margin-top: 1rem;
     padding: 0.7rem 1.5rem;
 
