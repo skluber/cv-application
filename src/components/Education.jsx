@@ -46,10 +46,9 @@ export function Education() {
                     />
 
                     <label htmlFor="studyTitle">Title of study</label>
-                    <input
+                    <textarea
                         id="studyTitle"
                         name="studyTitle"
-                        type="text"
                         value={educationInfo.studyTitle}
                         onChange={handleChange}
                     />
