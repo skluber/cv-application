@@ -1,19 +1,113 @@
-# React + Vite
+# CV Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive CV builder application built with React that allows users to create, edit, and preview a professional résumé in real time.
 
-Currently, two official plugins are available:
+The application provides separate sections for personal information, education, and practical experience, making it easy to generate a structured CV through an intuitive interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Demo
 
-## React Compiler
+🚀 **Live Demo:** https://skluber.github.io/cv-application/
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Features
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+* Edit personal information
+* Add and update educational background
+* Add and update work experience
+* Real-time CV preview
+* Responsive user interface
+* Dynamic form handling
+* Component-based architecture
+* Clean and intuitive design
 
-## Expanding the ESLint configuration
+## Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* Vite
+
+## Concepts Practiced
+
+This project was built to strengthen core React fundamentals, including:
+
+* Functional components
+* Props
+* State management with `useState`
+* Controlled form inputs
+* Event handling
+* Conditional rendering
+* Component composition
+* Lifting state up
+* Dynamic rendering from user input
+* Responsive design
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── GeneralInfo/
+│   ├── Education/
+│   ├── Experience/
+│   └── CVPreview/
+├── App.jsx
+├── App.css
+└── main.jsx
+```
+
+## How It Works
+
+1. Enter your personal information.
+2. Add your educational background.
+3. Add your work experience.
+4. The CV preview updates automatically as you type.
+5. Edit or update any section at any time.
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/skluber/cv-application.git
+```
+
+Move into the project directory:
+
+```bash
+cd cv-application
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+## What I Learned
+
+Through this project I gained hands-on experience with:
+
+* Managing application state in React
+* Building reusable UI components
+* Creating controlled forms
+* Structuring React applications
+* Passing data between components
+* Designing responsive interfaces
+* Developing user-driven applications
+
+## Credits
+
+Built as part of **The Odin Project** React curriculum.
